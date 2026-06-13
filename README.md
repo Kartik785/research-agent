@@ -20,8 +20,7 @@ uvicorn research.app:app --reload
 ```
 
 Open:
-- http://127.0.0.1:8000/healthz
-- http://127.0.0.1:8000/docs
+- https://kartik785-sar-report--streamlit-appapp-yg0xai.streamlit.app/ 
 
 ## Example API
 
