@@ -1,40 +1,40 @@
-# research
+# AI Research Agent
 
-Minimal FastAPI backend skeleton with:
-- config via environment variables / `.env`
-- structured logs via `structlog`
-- APIs organized using routers (`research/routes/`)
+An AI-powered research assistant that automates topic research, information gathering, analysis, and report generation. The system uses a multi-agent workflow to plan research tasks, collect information, and generate structured reports with PDF export support.
+
+## Features
+
+- Automated topic research
+- Multi-agent workflow architecture
+- Structured report generation
+- PDF export functionality
+- Interactive user interface
+- Modular and extensible design
+
+## Tech Stack
+
+- Python
+- Streamlit
+- LangGraph
+- Pydantic
+- ReportLab
+- FastAPI
+- Git/GitHub
+
+## Architecture
+
+User Query
+    ↓
+Planner Agent
+    ↓
+Research Agent
+    ↓
+Report Generator
+    ↓
+PDF Export
 
 ## Run
 
-From the venv:
+pip install -r requirements.txt
 
-```powershell
-python main.py
-```
-
-Or directly:
-
-```powershell
-uvicorn research.app:app --reload
-```
-
-
-## Example API
-
-```bash
-curl -X POST http://127.0.0.1:8000/api/agent/echo \
-	-H "Content-Type: application/json" \
-	-d '{"message":"hi"}'
-```
-
-## Config
-
-Environment variables (optional):
-- `APP_NAME` (default: `research`)
-- `APP_ENV` (`development` | `test` | `production`, default: `development`)
-- `LOG_LEVEL` (default: `INFO`)
-- `HOST` (default: `127.0.0.1`)
-- `PORT` (default: `8000`)
-- `RELOAD` (default: `true` in development)
-
+streamlit run main.py
