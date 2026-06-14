@@ -19,8 +19,6 @@ Or directly:
 uvicorn research.app:app --reload
 ```
 
-Open:
-- https://kartik785-sar-report--streamlit-appapp-yg0xai.streamlit.app/ 
 
 ## Example API
 
